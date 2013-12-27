@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<script src="js/bootstrap.js"></script>		
+		<script src="js/bootstrap-responsive.js"></script>
+    </head>
+    <body>
+<!-- black bar at the top//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->      
+		<div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <ul class="nav pull-left">
+						<li>
+							<img class="centre" id="topBar" border="0" src="img/SiQuoia logo.jpg"/>
+						</li>
+                        <li class="divider-vertical"> </li>
+                    </ul>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav"></ul>
+                        <ul class="nav pull-right">
+                            <li><a href="home.html"/><i class="icon-white icon-lock"></i> Logout</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">			
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="well">	
+						<form class="form-horizontal">
+						  <div class="control-group">
+							<label class="control-label" for="inputUsername">Username</label>
+							<div class="controls">
+							  <input type="text" id="inputUsername" placeholder="Username">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputPassword">Password</label>
+							<div class="controls">
+							  <input type="password" id="inputPassword" placeholder="Password">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputType">Type</label>
+							<div class="controls">
+							  <input type="text" id="inputType" placeholder="Type">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputPoints">Points</label>
+							<div class="controls">
+							  <input type="text" id="inputPoints" placeholder="Points">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-success">Add User</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="well">	
+						<table class="table table-condensed table-striped">
+							<thead>
+								<tr>
+									<th>Select</th>
+									<th>Username</th>
+									<th>User Id</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${User 1}</td>
+									<td>${123}</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${User 2}</td>
+									<td>${456}</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-primary">Delete Selected Users</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="well">	
+						<form class="form-horizontal">
+						  <div class="control-group">
+							<label class="control-label" for="inputCode">Code</label>
+							<div class="controls">
+							  <input type="text" id="inputCode" placeholder="Code">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputDescription">Description</label>
+							<div class="controls">
+							  <input type="text" id="inputDescription" placeholder="Description">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputStatus">Status</label>
+							<div class="controls">
+							  <input type="text" id="inputStatus" placeholder="Status">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputNumberOfQuestions">Number of Questions</label>
+							<div class="controls">
+							  <input type="text" id="inputNumberOfQuestions" placeholder="Number of Questions">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputUserId">User Id</label>
+							<div class="controls">
+							  <input type="text" id="inputUserId" placeholder="User Id">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputTopicId">Topic Id</label>
+							<div class="controls">
+							  <input type="text" id="inputTopicId" placeholder="Topic Id">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-success">Add Token</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="well">	
+						<table class="table table-condensed table-striped">
+							<thead>
+								<tr>
+									<th>Select</th>
+									<th>Code</th>
+									<th>Status</th>
+									<th>User Id</th>
+									<th>Token Id</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${Code 1}</td>
+									<td>${Status 1}</td>
+									<td>${UserId 1}</td>
+									<td>${TokenId 1}</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${Code 2}</td>
+									<td>${Status 2}</td>
+									<td>${UserId 2}</td>
+									<td>${TokenId 2}</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-primary">Delete Selected Tokens</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>	
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="well">	
+						<form class="form-horizontal">
+						  <div class="control-group">
+							<label class="control-label" for="inputDescription">Description</label>
+							<div class="controls">
+							  <input type="text" id="inputDescription" placeholder="Description">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputCorrectAnswer">Correct Answer</label>
+							<div class="controls">
+							  <input type="text" id="inputCorrectAnswer" placeholder="Correct Answer">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputWrongAnswer1">Wrong Answer 1</label>
+							<div class="controls">
+							  <input type="text" id="inputWrongAnswer1" placeholder="Wrong Answer 1">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputWrongAnswer2">Wrong Answer 2</label>
+							<div class="controls">
+							  <input type="text" id="inputWrongAnswer2" placeholder="Wrong Answer 2">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputWrongAnswer3">Wrong Answer 3</label>
+							<div class="controls">
+							  <input type="text" id="inputWrongAnswer3" placeholder="Wrong Answer 3">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputTopicId">Topic Id</label>
+							<div class="controls">
+							  <input type="text" id="inputTopicId" placeholder="Topic Id">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<label class="control-label" for="inputMultimediaId">Multimedia Id</label>
+							<div class="controls">
+							  <input type="text" id="inputMultimediaId" placeholder="Multimedia Id">
+							</div>
+						  </div>
+						  <div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-success">Add Question</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						  </div>
+						  <label> OR </label>						  
+						  <form method="post" action="file-upload-1.htm" name="submit" enctype="multipart/form-data">
+							<input type="file" name="fileField"><br /><br />
+							<input type="submit" name="submit" value="Submit">
+						  </form>
+						</form>
+					</div>
+				</div>	
+				<div class="span6">
+					<div class="well">	
+						<table class="table table-condensed table-striped">
+							<thead>
+								<tr>
+									<th>Select</th>
+									<th>Description</th>
+									<th>Topic Id</th>
+									<th>Multimedia Id</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${Description 1}</td>
+									<td>${Topic Id 1}</td>
+									<td>${Multimedia Id 1}</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>${Description 2}</td>
+									<td>${Topic Id 2}</td>
+									<td>${Multimedia Id 2}</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="control-group">
+							<div class="controls">
+							  <button type="submit" class="btn btn-primary">Delete Selected Questions</button>
+							  <a class="btn btn-danger" href="home.html">Cancel</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+        </div>	
+	</body>
+</html>
+
+
+
+
